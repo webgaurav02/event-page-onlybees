@@ -1,0 +1,35 @@
+.foot{
+    min-height: 40vh;
+}
+
+.foot-logo{
+    width: 15vw;
+}
+
+.socials{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .foot{
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    
+    .foot-logo{
+        width: 70%;
+        margin: 5rem auto;
+    }
+
+    .footer-links{
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .socials{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+}
