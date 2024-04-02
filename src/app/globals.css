@@ -31,3 +31,74 @@ body {
     text-wrap: balance;
   }
 }
+
+.home-page{
+  background-color: black;
+  min-height: 100svh;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.0)
+  ),
+  url(../../public/chi.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+.poster{
+  min-width: 55vw;
+}
+.event-details{
+  border-radius: 9px;
+  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  width: 35vw;
+}
+
+.event-details-desktop{
+  border-radius: 9px;
+  box-shadow: 0 3px 10px rgb(0,0,0,0.2);
+  width: 35vw;
+  background-color: white;
+  right: 0;
+}
+
+.about p{
+  line-height: 180%;
+}
+
+#paymentForm{
+  text-align: left !important;
+}
+
+.razorpay-payment-button.svelte-ohbfj8{
+  width: 100%;
+}
+
+.PaymentButton.svelte-ekc7fv.svelte-ekc7fv{
+  width: 100% !important;
+  border-radius: 5px;
+}
+
+.PaymentButton--dark.svelte-ekc7fv.svelte-ekc7fv{
+  background-color: #560D80 !important;
+}
+
+.PaymentButton--dark.svelte-ekc7fv.svelte-ekc7fv{
+  color: #FFDF01 !important;
+}
+
+#paymentForm{
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .poster{
+      min-width: 100%;
+  }
+  .event-details{
+      width: 100%;
+  }
+}

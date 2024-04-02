@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import "./EventDetails.css";
 
-import flyer from "../../../public/hoot_mobile.png"
+import flyer from "../../../public/hoot.png"
 
 
 import Image from "next/image";
@@ -59,43 +59,6 @@ const EventDetails = () => {
 
 
     return (
-        // <div className="grid-container px-20 lg:mx-80 mt-20">
-        // <div className="grid-item item-1 p-0 leading-8">
-        //     <h2 className="text-right text-5xl">MIX N MATCH</h2>
-        //     <p className="text-right font-light">The Yeastern Civilization</p>
-        //     <h3 className="text-right text-xl text-[#00FF38]">Sat, Apr 6, 9:00 PM GMT +5:30</h3>
-        //     <div className="flex gap-16 justify-end">
-        //         <p>Tag</p>
-        //         <p>Shillong</p>
-        //     </div>
-        // </div>
-
-        // <div className="grid-item item-2 aspect-w-1 aspect-h-1">
-        //     <Image
-        //         src={flyer}
-        //         loading="lazy"
-        //         // layout="fill"
-        //         objectFit="cover"
-        //         objectPosition="center"
-        //         alt="Event Flyer"
-        //     />
-        // </div>
-
-        // <div className="grid-item item-3 p-4 rounded-2xl">
-        //     <h3 className="text-xl font-bold leading-10">About</h3>
-        //     <div className="overflow-scroll about-text">
-        //         <p className="leading-6">
-        //             Introducing Hoot Society - your dynamic event powerhouse in Northeast India. Driven by youth and fueled by determination, our team is dedicated to curating top-tier events for diverse audiences. With strong PR and networking skills, we're on a mission to revolutionize Meghalaya&apos;s nightlife scene, blending entertainment, music, and culture to create unforgettable experiences.
-        //             Join us as we push boundaries and redefine event standards in Northeast India. Experience the magic of Hoot Society and let us elevate your events to new heights
-        //             Introducing "Mix N Match" - an innovative event IP poised to revolutionize Meghalaya&apos;s nightlife scene with a vibrant fusion of Hip-Hop, R&B, and Afrobeats music. Prepare to be immersed in an unparalleled audiovisual journey.
-        //             At the heart of our mission is bridging the gap between local talent and national luminaries. We strive to spotlight the rich pool of talent within Meghalaya while also featuring renowned artists from across the nation.
-        //             Through collaboration and a dedicated platform, "Mix N Match" serves as a catalyst for artistic advancement and cultural exchange. With a steadfast commitment to excellence, every facet of the event is meticulously curated to ensure an unforgettable experience for all attendees.
-        //         </p>
-        //     </div>
-        // </div>
-        //     <div className="grid-item item-4">4</div>
-        //     <div className="grid-item item-5">5</div>
-        // </div>
         <div className="event-container">
             <div className="my-16 flex lg:flex-row flex-col-reverse gap-6">
 
@@ -107,7 +70,7 @@ const EventDetails = () => {
                         <p className="lg:ml-0 ml-3 lg:text-right text-left font-light">The Yeastern Civilization</p>
                         {<h3 className="lg:ml-0 ml-3 lg:text-right text-left text-xl text-[#00FF38]">Sat, Apr 6, 9:00 PM <span className="font-light text-sm">{isMobile?<br />:""}GMT +5:30</span></h3>}
                         <div className="lg:ml-0 ml-3 flex lg:gap-16 gap-10 lg:justify-end">
-                            <p>Tag</p>
+                            {/* <p>Tag</p> */}
                             <p>Shillong</p>
                         </div>
                     </div>
@@ -132,10 +95,9 @@ const EventDetails = () => {
                     <div className="flyer aspect-w-1 aspect-h-1">
                         <Image
                             src={flyer}
-                            loading="lazy"
-                            // layout="fill"
-                            objectFit="cover"
-                            objectPosition="center"
+                            priority
+                            width={500}
+                            height="auto"
                             alt="Event Flyer"
                         />
                     </div>
